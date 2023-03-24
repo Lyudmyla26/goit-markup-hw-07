@@ -1,0 +1,58 @@
+@media screen and (min-width: 480px), (max-width: 767px) {
+	/* Колонки */
+	.container {
+		max-width: 428px;
+	}
+
+	.strategy {
+		padding: 96px 0;
+	}
+	.strategy-title {
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 1.1;
+		text-align: center;
+		text-transform: capitalize;
+	}
+	.strategy-description {
+		font-weight: 500;
+	}
+	.strategy-item:not(:last-child) {
+		margin-bottom: 72px;
+	}
+	/* Фото */
+	.work {
+		display: none;
+	}
+	/* Our Team */
+	.team {
+		padding: 96px 0;
+	}
+	.team-title {
+		font-weight: 700;
+	}
+	.container-smm {
+		max-width: 294px;
+	}
+	.team-item:not(:last-child) {
+		margin-bottom: 72px;
+	}
+	/* Customers */
+	.customers {
+		padding: 96px 0;
+	}
+	.customers-item {
+		width: calc((100% - 16px) / 2);
+	}
+	.customers-list {
+		gap: 72px 16px;
+	}
+	.footer {
+		padding: 96px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.strategy-icon {
+		display: none;
+	}
+}
