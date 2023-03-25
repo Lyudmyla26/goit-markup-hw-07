@@ -1,0 +1,11 @@
+.header-link.curent::after {
+	content: "";
+	width: 100%;
+	height: 4px;
+	left: 0px;
+	top: 44px;
+	background-color: var(--accent-color);
+	border-radius: 2px;
+	display: block;
+	position: absolute;
+}

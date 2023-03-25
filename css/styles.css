@@ -81,14 +81,14 @@ img {
 	color: var(--logo-color);
 }
 
-.header-navigation {
+/* .header-navigation {
 	display: flex;
 	align-items: center;
-}
-.header-list {
+} */
+/* .header-list {
 	display: flex;
 	gap: 40px;
-}
+} */
 
 .header-link:is(:hover, :focus) {
 	color: var(--accent-color);
@@ -110,17 +110,6 @@ img {
 }
 .header-link.curent {
 	color: var(--accent-color);
-}
-.header-link.curent::after {
-	content: "";
-	width: 100%;
-	height: 4px;
-	left: 0px;
-	top: 44px;
-	background-color: var(--accent-color);
-	border-radius: 2px;
-	display: block;
-	position: absolute;
 }
 
 .header-adress {
@@ -151,13 +140,14 @@ img {
 .hero {
 	background-color: var(--basic-color);
 	padding: 188px 0;
-	max-width: 1440px;
+	/* max-width: 1440px; */
 	margin-left: auto;
 	margin-right: auto;
 	background-size: auto;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-background.jpg);
+	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+		url(../images/hero-background-desktop.jpg);
 }
 .hero-container {
 	display: flex;
@@ -169,8 +159,7 @@ img {
 	line-height: 1.07;
 	letter-spacing: 0.02em;
 	color: var(--title-color);
-	width: 496px;
-	margin-bottom: 48px;
+	/* width: 496px; */
 }
 .hero-btn {
 	font-family: inherit;
@@ -396,7 +385,7 @@ img {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--footer-description-color);
-	width: 274px;
+	max-width: 274px;
 	margin-top: 16px;
 }
 .footer-icon-title {
@@ -425,7 +414,7 @@ img {
 	border: 1px solid #ffffff;
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;
-	width: 264px;
+	/* width: 264px; */
 	height: 40px;
 	background-color: var(--basic-color);
 	padding: 8px 16px;
@@ -632,6 +621,7 @@ img {
 }
 .fotm-checkbox {
 	margin-bottom: 24px;
+	margin-top: 18px;
 }
 
 .form-label-checkbox {
@@ -666,9 +656,6 @@ img {
 .fotm-check:checked + .form-label-checkbox::before {
 	background-color: var(--accent-color);
 	border: 1px solid var(--accent-color);
-}
-.fotm-checkbox {
-	margin-top: 16px;
 }
 
 .checkbox-link {
