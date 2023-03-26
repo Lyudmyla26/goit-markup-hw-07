@@ -58,6 +58,7 @@ img {
 }
 
 /* Шапка профіля  */
+
 .header {
 	padding: 24px 0;
 	border-bottom: 1px solid var(--footer-description-color);
@@ -137,10 +138,11 @@ img {
 	color: var(--accent-color);
 }
 /* Банер */
+
 .hero {
 	background-color: var(--basic-color);
 	padding: 188px 0;
-	/* max-width: 1440px; */
+	max-width: 1440px;
 	margin-left: auto;
 	margin-right: auto;
 	background-size: auto;
