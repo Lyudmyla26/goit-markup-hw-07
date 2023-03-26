@@ -8,6 +8,8 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
 		<link rel="stylesheet" href="./css/styles.css" />
 		<link rel="stylesheet" href="./css/mobile.css" />
+		<link rel="stylesheet" href="./css/tablet.css" />
+		<link rel="stylesheet" href="./css/desktop.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -21,7 +23,7 @@
 			<div class="container header-container">
 				<a href="./index.html" class="header-logo"> <span>Web</span>Studio</a>
 				<button type="button" class="js-open-menu btn-hamburger">
-					<svg width="32" height="32">
+					<svg width="32" height="22">
 						<use href="./images/symbol-defs.svg#icon-hamburger"></use>
 					</svg>
 				</button>
@@ -31,6 +33,7 @@
 							<use href="./images/symbol-defs.svg#icon-close-meny"></use>
 						</svg>
 					</button>
+
 					<nav class="header-navigation">
 						<ul class="header-list">
 							<li class="header-item item"><a href="" class="header-link curent">Studio</a></li>
@@ -46,7 +49,7 @@
 								</a></li
 							>
 							<li class="header-item item"
-								><a href="tel:+110001111111" class="header-contacts">+11 000 111-11-11</a></li
+								><a href="tel:+110001111111" class="header-contacts">+11 (000) 111-11-11</a></li
 							>
 						</ul>
 					</address>
@@ -67,7 +70,7 @@
 						</li>
 						<li class="meny-item">
 							<a href="" class="meny-link">
-								<svg width="12" height="24">
+								<svg width="24" height="24">
 									<use href="./images/symbol-defs.svg#icon-facebook"></use>
 								</svg>
 							</a>
@@ -152,13 +155,31 @@
 					<h2 class="work-title">What are we doing</h2>
 					<ul class="work-list">
 						<li class="work-item item">
-							<img src="./images/section3_1.jpg" alt="computer" width="360" height="300" />
+							<img
+								srcset="./images/section3_1.jpg 1x, ./images/section3_1@2x.jpg 2x"
+								src="./images/section3_1.jpg"
+								alt="computer"
+								width="360"
+								height="300"
+							/>
 						</li>
 						<li class="work-item item">
-							<img src="./images/section3_2.jpg" alt="telephone" width="360" height="300" />
+							<img
+								srcset="./images/section3_2.jpg 1x, ./images/section3_2@2x.jpg 2x"
+								src="./images/section3_2.jpg"
+								alt="telephone"
+								width="360"
+								height="300"
+							/>
 						</li>
 						<li class="work-item item">
-							<img src="./images/section3_3.jpg" alt="telephone" width="360" height="300" />
+							<img
+								srcset="./images/section3_3.jpg 1x, ./images/section3_3@2x.jpg 2x"
+								src="./images/section3_3.jpg"
+								alt="telephone"
+								width="360"
+								height="300"
+							/>
 						</li>
 					</ul>
 				</div>
@@ -345,7 +366,7 @@
 			</section>
 			<!-- Customers -->
 			<section class="customers">
-				<div class="container">
+				<div class="container container-sm">
 					<h2 class="customers-title">Customers</h2>
 					<ul class="customers-list">
 						<li class="customers-item">
@@ -398,6 +419,7 @@
 		<footer class="footer">
 			<div class="container">
 				<div class="footer-content">
+					<!-- <div class="footer-content-flex"> -->
 					<div class="footer-logo-description">
 						<a href="./index.html" class="footer-logo"> <span>Web</span>Studio</a>
 						<p class="footer-description">
@@ -423,7 +445,7 @@
 							</li>
 							<li class="footer-icon-item">
 								<a href="" class="footer-icon-link">
-									<svg width="12" height="24">
+									<svg width="24" height="24">
 										<use href="./images/symbol-defs.svg#icon-facebook"></use>
 									</svg>
 								</a>
@@ -437,6 +459,7 @@
 							</li>
 						</ul>
 					</div>
+					<!-- </div> -->
 					<div class="footer-form">
 						<p class="footer-form-label"> Subscribe </p>
 						<form class="footer-form-btn">
