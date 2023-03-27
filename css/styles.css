@@ -58,14 +58,6 @@ img {
 
 /* Шапка профіля  */
 
-.header {
-	padding: 24px 0;
-	border-bottom: 1px solid var(--footer-description-color);
-}
-.header-container {
-	display: flex;
-	justify-content: space-between;
-}
 .header-logo {
 	font-family: "Raleway", sans-serif;
 	font-weight: 800;
@@ -81,40 +73,17 @@ img {
 	color: var(--logo-color);
 }
 
-/* .header-navigation {
-	display: flex;
-	align-items: center;
-} */
-/* .header-list {
-	display: flex;
-	gap: 40px;
-} */
-
 .header-link:is(:hover, :focus) {
 	color: var(--accent-color);
 	text-decoration: underline;
 }
 .header-link {
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.5;
 	letter-spacing: 0.02em;
 	text-decoration: none;
 	color: var(--basic-color);
 	transition-property: color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-item {
-	position: relative;
-}
-.header-link.curent {
-	color: var(--accent-color);
-}
-
-.header-adress {
-	/* display: flex;
-	gap: 40px; */
 }
 
 .header-contacts {
@@ -430,7 +399,7 @@ img {
 .modal {
 	position: absolute;
 	min-height: 584px;
-	width: 408px;
+	max-width: 408px;
 	padding: 24px;
 	background-color: var(--modal-fon);
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
