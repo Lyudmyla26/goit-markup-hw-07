@@ -11,9 +11,19 @@
 		height: unset;
 		position: static;
 		padding: 0;
+		flex-direction: row;
 	}
+
 	.header-meny-list {
 		display: none;
+	}
+	.header-contacts {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 14px;
+		letter-spacing: 0.04em;
+		color: #434455;
+		margin-top: 0;
 	}
 
 	.header-link {
@@ -27,17 +37,17 @@
 
 	.header-container {
 		display: flex;
-		justify-content: space-between;
 	}
 	.header-content {
 		display: flex;
 	}
-	.header-navigation {
-		display: flex;
-		align-items: center;
-	}
+
 	.header-list {
+		flex-direction: row;
+		gap: 40px;
+		margin-right: 121px;
 	}
+
 	.header-item {
 		position: relative;
 	}
@@ -51,11 +61,6 @@
 		border-radius: 2px;
 		display: block;
 		position: absolute;
-	}
-
-	.header-adress {
-		display: flex;
-		gap: 40px;
 	}
 
 	.hero {

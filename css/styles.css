@@ -87,8 +87,6 @@ img {
 }
 
 .header-contacts {
-	font-size: 16px;
-	line-height: 1.5;
 	letter-spacing: 0.02em;
 	text-decoration: none;
 	font-style: normal;
@@ -399,7 +397,7 @@ img {
 .modal {
 	position: absolute;
 	min-height: 584px;
-	max-width: 408px;
+	width: 408px;
 	padding: 24px;
 	background-color: var(--modal-fon);
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);

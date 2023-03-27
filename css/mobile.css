@@ -4,10 +4,22 @@
 		max-width: 428px;
 	}
 	.btn-hamburger {
-		background-color: #e7e9fc;
-		outline: transparent;
+		background-color: #ffffff;
+		border: none;
 		width: 32px;
 		height: 22px;
+		stroke: #2e2f42;
+		position: relative;
+	}
+	.logo-mobail {
+		display: flex;
+		justify-content: space-between;
+	}
+	.hamburger-img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
 	.header {
 		padding: 24px 0;
@@ -16,7 +28,7 @@
 	.header-navigation {
 		margin-bottom: auto;
 	}
-	
+
 	.header-link.curent {
 		color: var(--accent-color);
 	}
@@ -27,19 +39,9 @@
 		text-transform: capitalize;
 	}
 	.header-list {
-		/* display: flex;
+		display: flex;
 		flex-direction: column;
-		row-gap: 40px; */
-	}
-
-	.header-meny {
-		width: 100%;
-		height: 100vh;
-		position: fixed;
-		right: 0;
-		top: 0;
-		padding: 24px 24px 40px 40px;
-		background-color: var(--modal-fon);
+		row-gap: 40px;
 	}
 	.header-btn {
 		background: #e7e9fc;
@@ -53,12 +55,22 @@
 		margin-left: auto;
 		margin-bottom: 32px;
 	}
+	.header-meny {
+		width: 100%;
+		height: 100vh;
+		position: fixed;
+		right: 0;
+		top: 0;
+		padding: 24px 24px 40px 40px;
+		background-color: var(--modal-fon);
+		display: flex;
+		flex-direction: column;
+	}
+
 	.meny-item {
 		list-style: none;
 	}
 
-	.header-adress {
-	}
 	.header-contacts {
 		display: block;
 		margin-top: auto;
@@ -72,13 +84,13 @@
 		font-size: 20px;
 		line-height: 1.2;
 		color: #434455;
-		margin-bottom: 40px;
+		margin-top: 40px;
 	}
 	.header-meny-list {
 		margin-top: 48px;
 		display: flex;
 		flex-wrap: wrap;
-		gap: 16px;
+		gap: 56px;
 	}
 	.meny-item {
 		width: 40px;
@@ -218,6 +230,10 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.modal {
+		width: 392px;
+		padding: 16px;
+	}
 }
 @media screen and (max-width: 1199px) {
 	.strategy-icon {
@@ -225,5 +241,17 @@
 	}
 	.work {
 		display: none;
+	}
+}
+@media screen and (min-width: 320px) and (max-width: 428px) {
+	.header-meny-list {
+		gap: 26px;
+	}
+	.tel {
+		font-size: 26px;
+	}
+	.modal {
+		min-width: 320px;
+		padding: 5px;
 	}
 }
