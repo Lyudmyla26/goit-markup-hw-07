@@ -82,7 +82,7 @@
 	}
 
 	.hero {
-		max-width: 100%;
+		max-width: 738px;
 		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 			url(../images/hero-background-tablet.jpg);
 	}
