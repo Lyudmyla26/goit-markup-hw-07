@@ -60,7 +60,7 @@
 	}
 	.mobail-list {
 		padding-top: 56px;
-		margin-bottom: 234px;
+		margin-bottom: 200px;
 	}
 	.mobail-contacts-item:not(:last-child) {
 		margin-bottom: 40px;
@@ -136,11 +136,7 @@
 		visibility: hidden;
 		pointer-events: none;
 	}
-	.is-open {
-		opacity: 0;
-		visibility: hidden;
-		pointer-events: none;
-	}
+
 	.hero {
 		background-color: var(--basic-color);
 		padding: 112px 0;
@@ -287,7 +283,7 @@
 	.header-meny-list {
 		gap: 26px;
 	}
-	.tel {
+	.mobail-contacts {
 		font-size: 26px;
 	}
 	.modal {
