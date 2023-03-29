@@ -21,26 +21,35 @@
 		display: flex;
 		justify-content: space-between;
 	}
+	.nawigation {
+		margin-top: auto;
+	}
 	.header-meny {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
 		height: 100%;
 		position: fixed;
-		right: 0;
-		top: 0;
+		right: 0px;
+		top: 0px;
 		z-index: 1001;
-		padding: 24px 24px 24px;
+		padding: 80px 24px 40px;
 		background-color: var(--modal-fon);
+		transform: scale(1);
+		transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	.header-meny.is-open {
+		transform: scale(0);
+	}
+	.is-open {
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
 	}
 	.mobail-contacts-item {
 		margin-top: auto;
 	}
-	.mobail-meny-container {
-		display: flex;
-		flex-direction: column;
-		position: relative;
-	}
+
 	.mobail-contacts {
 		text-decoration: none;
 		font-weight: 700;
@@ -58,10 +67,7 @@
 		color: #434455;
 		text-decoration: none;
 	}
-	.mobail-list {
-		padding-top: 56px;
-		margin-bottom: 200px;
-	}
+
 	.mobail-contacts-item:not(:last-child) {
 		margin-bottom: 40px;
 	}
@@ -99,8 +105,8 @@
 	}
 	.header-btn {
 		position: absolute;
-		top: 0px;
-		right: 0px;
+		top: 24px;
+		right: 24px;
 		background: #e7e9fc;
 		border: 1px solid #2e2f42;
 		cursor: pointer;
@@ -130,11 +136,6 @@
 		justify-content: center;
 		align-items: center;
 		fill: var(--team-background-color);
-	}
-	.is-open {
-		opacity: 0;
-		visibility: hidden;
-		pointer-events: none;
 	}
 
 	.hero {
@@ -264,10 +265,10 @@
 
 	.filter-list {
 		display: flex;
-		margin-top: 96px;
 		gap: 16px 24px;
-		margin-bottom: 72px;
 		flex-wrap: wrap;
+		margin-top: 48px;
+		margin-bottom: 48px;
 	}
 	.filter-btn {
 		padding: 8px 16px;
@@ -290,7 +291,6 @@
 	}
 	.modal {
 		width: calc(100% - 2 * 15px);
-		padding: 5px;
 	}
 }
 @media screen and (max-width: 767px) {

@@ -1,6 +1,6 @@
 @media screen and (min-width: 768px) {
 	.container {
-		max-width: 738px;
+		max-width: 768px;
 	}
 	.btn-hamburger {
 		display: none;
@@ -173,6 +173,16 @@
 	}
 	.filter-list {
 		justify-content: center;
+	}
+	.filter-btn {
+		padding: 12px 24px;
+	}
+	.service-list > .services-item {
+		flex-basis: calc((100% - 24px) / 2);
+	}
+	.filter-list {
+		margin-top: 64px;
+		margin-bottom: 64px;
 	}
 	.filter-btn {
 		padding: 12px 24px;

@@ -562,7 +562,7 @@ img {
 	color: var(--btn-color);
 	background-color: var(--team-background-color);
 	border: 1px solid var(--footer-description-color);
-	min-width: 59px;
+	min-width: 53px;
 	cursor: pointer;
 	font-family: inherit;
 	border-radius: 4px;
